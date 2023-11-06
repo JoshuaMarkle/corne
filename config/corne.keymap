@@ -20,7 +20,7 @@
 //                    | GUI | SPC | LWR |   | RSE | BKSP | DEL |
             bindings = <
 &kp TAB   &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G &kp C &kp R &kp L &kp FSLH
-&kp LCTRL &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H &kp T &kp N &kp S &kp RENT
+&kp LCTRL &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H &kp T &kp N &kp S &kp RET
 &kp LSHFT &kp SEMI &kp Q     &kp J   &kp K &kp X   &kp B &kp M &kp W &kp V &kp Z &kp ESC
                         &kp LGUI &kp SPACE &mo 1   &mo 2 &kp BSPC &kp DEL
             >;
@@ -34,9 +34,9 @@
 //                    | GUI | SPC |     |   |     | BKSP | ALT |
             bindings = <
 &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
-&kp LCTRL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp MINUS &kp EQUAL &kp DQT   &kp LBRC &kp RBRC &kp PIPE
-&kp LSHFT &kp N6   &kp N7 &kp N8   &kp N9   &kp N0      &kp UNDER &kp PLUS  &kp TILDE &kp LBKT &kp RBKT &kp ESC
-                            &kp LGUI &kp SPACE &trans   &trans &kp BSPC &kp RALT
+&kp LCTRL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp MINUS &kp EQUAL &kp DQT         &kp LBRC &kp RBRC &kp PIPE
+&kp LSHFT &kp N6   &kp N7 &kp N8   &kp N9   &kp N0      &kp UNDER &kp PLUS  &kp TILDE       &kp LBKT &kp RBKT &trans
+                                 &trans &trans &trans   &trans &trans &kp RALT
             >;
         };
 
@@ -47,10 +47,10 @@
 // | SHIFT | F6  | F7  | F8  | F9  | F10 |   |     |      |     |     |     | ESC |
 //                     | GUI | SPC |     |   |     | BKSP | ALT |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp F6 &kp UP   &kp F8   &kp F9    &kp F10 &kp BSPC
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans   &kp UP   &trans    &trans &trans
 &kp  TAB   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &trans &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
 &kp LSHIFT &kp F6       &kp F7       &kp F8       &kp F9       &kp F10        &trans &trans   &trans   &trans    &trans  &trans 
-                                                  &kp LGUI &trans &kp SPACE   &trans &kp BSPC &kp RALT
+                                                       &trans &trans &trans   &trans &trans &kp RALT
             >;
         };
     };
