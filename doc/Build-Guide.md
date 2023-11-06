@@ -1,6 +1,8 @@
 # Wireless Corne MX Build Guide 📄
 
-This guide provides step-by-step instructions for how I built my personal keyboard with the supplies availiable to me. Overall, the entire process took around 2 dedicated days of researching and soldering to put together a complete keyboard (minus the LEDs). This range of time will fluxuate based on the amount of experience you have and your comfortability with soldering.
+This guide provides step-by-step instructions for how I built my personal keyboard with the supplies availiable to me. Overall, the entire process took around 2 dedicated days of researching and soldering to put together a complete keyboard (minus the LEDs). This range of time will fluctuate based on the amount of experience you have and your comfortability with soldering.
+
+![corne.png](images/corne.jpg)
 
 ### All The Parts 🛒
 
@@ -20,7 +22,11 @@ This guide provides step-by-step instructions for how I built my personal keyboa
 
 ## Build Process 🔧
 
-Many guides out there recommend soldering at a low temperature, somewhere around ~300 degrees, to prevent damaging the PCB or micro controller. This is good advice but it is more important how long you remain in contact with any component. I say this beacuese not all soldering wires will allow such low temperatures and so each situation will be different. I reccomend soldering at the lowest temp you can where the solder will flow and be careful how long you are in contact with any component.
+⚠️ Before I start, I have to say that it is not my fault if you break anything. If you are not comfortable with any of this, it might be best to just spend the extra money for someone to do it for you. Now that's out of the way, lets start!
+
+### Temperature Stuff 🔥
+
+Many guides out there recommend soldering at a low temperature, somewhere around ~300 degrees, to prevent damaging the PCB or micro controller. This is good advice but it is more important that you aren't in contant with any compontent for too long. I say this beacuese not all soldering wires will allow such low temperatures so each situation will be different. I recommend soldering at the lowest temp you can where the solder will flow but be very careful how long you are in contact with any component.
 
 ### PCB First ⚡
 

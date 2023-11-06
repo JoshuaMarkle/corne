@@ -1,10 +1,10 @@
 # Joshua Markle's ZMK Keymap ⌨
 
-![corne.png](doc/images/corne.png)
-
-This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration for my [Corne Keyboard](https://github.com/foostan/crkbd). I have also created a [Build Guide](doc/Build-Guide.md) specifically for the wireless Corne Cherry.
+This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration for my [Corne Keyboard](https://github.com/foostan/crkbd). I have also created a [Build Guide](doc/Build-Guide.md) specifically for my wireless Corne Cherry.
 
 Eveything is talored around the DVORAK keyboard layout and optimized for programmers!
+
+![corne.png](doc/images/corne.png)
 
 ### Default Layer
 c
