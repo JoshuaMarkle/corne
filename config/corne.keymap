@@ -38,30 +38,6 @@
 #define TD_TAW      &td15   // TAB LWIN
 #define TD_SCLOCK   &td16   // (S)LSHIFT CAPSLOCK (Sticky shift)
 
-// include &name in keymap to use
-// FORMAT
-//   natural --> (on shift)
-//   number --> symbols | number code --> symbol code 
-// one_lpar    1 --> (  | N1 --> LPAR
-// two_par     2 --> )  | N2 --> RPAR
-// three_rbrc  3 --> }  | N3 --> RBRC
-// four_pl     4 --> ]  | N4 --> PLUS
-// five_lbrc   5 --> {  | N5 --> RSFT
-// six_rbkt    6 --> ]  | N6 --> RBKT
-// seven_lbkt  7 --> [  | N7 --> LBKT
-// eight_exlm  8 --> !  | N8 --> EXCL
-// nine_equal  9 --> =  | N9 --> EQUAL
-// zero_s      0 --> *  | N0 --> STAR
-
-/*
-// Sticky key config if desired
-&sk {
-    //release-after-ms = <2000>;
-    quick-release;
-};
-
-*/
-
 / {
 
 
@@ -187,78 +163,6 @@
             tapping-term-ms = <TAP_SPEED>; 
             bindings = <&sk LSHIFT>, <&kp CAPSLOCK>;
             }; 
-
-        // create the shifts of dvorak 
-        seven_lbkt: seven_lbkt{ 
-                compatible = "zmk,behavior-mod-morph";
-                label="SEVEN_LBKT";
-                #binding-cells = <0>;
-                bindings = <&kp N7>, <&kp LBKT>;  
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-            }; 
-        five_lbrc: five_lbrc {
-                compatible = "zmk,behavior-mod-morph";
-                label="FIVE_LBRC";
-                #binding-cells = <0>; 
-                bindings = <&kp N5>,<&kp LBRC>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        three_rbrc: three_rbrc {
-                compatible = "zmk,behavior-mod-morph";
-                label="THREE_RBRC";
-                #binding-cells = <0>; 
-                bindings = <&kp N3>,<&kp RBRC>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        one_lpar: one_lpar {
-                compatible = "zmk,behavior-mod-morph";
-                label="ONE_LPAR";
-                #binding-cells = <0>; 
-                bindings = <&kp N1>,<&kp LPAR>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        nine_equal: nine_equal {
-                compatible = "zmk,behavior-mod-morph";
-                label="nine_equal";
-                #binding-cells = <0>; 
-                bindings = <&kp N9>,    <&kp EQUAL>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        zero_s: zero_star { 
-                compatible = "zmk,behavior-mod-morph";
-                label="ZERO_STAR";
-                #binding-cells = <0>;
-                bindings = <&kp N0>, <&kp STAR>;  
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-            }; 
-        two_par: two_paren {
-                compatible = "zmk,behavior-mod-morph";
-                label="TWO_PAR";
-                #binding-cells = <0>; 
-                bindings = <&kp N2>,<&kp RPAR>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        four_pl: four_plus {
-                compatible = "zmk,behavior-mod-morph";
-                label="FOUR_PLUS";
-                #binding-cells = <0>; 
-                bindings = <&kp N4>,<&kp PLUS>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        six_rbkt: six_rbkt {
-                compatible = "zmk,behavior-mod-morph";
-                label="six_rbkt";
-                #binding-cells = <0>; 
-                bindings = <&kp N6>,<&kp RBKT>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
-        eight_exlm: eight_exlm {
-                compatible = "zmk,behavior-mod-morph";
-                label="EIGHT_EXLM";
-                #binding-cells = <0>; 
-                bindings = <&kp N8>,    <&kp EXCL>;
-                mods=<(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     // LAYERS
@@ -292,10 +196,10 @@ TD_SCLOCK TD_QUOTE TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp
 // | SHFT | F6  | F7  | F8  | F9  | F10 |         |HOME | PGDN| PGUP| END |     |      |
 //                    |     |     |     |         |     |     |     |
                         bindings = <
-   &trans     &seven_lbkt   &five_lbrc  &three_rbrc &one_lpar   &nine_equal          &zero_s    &two_par    &four_pl    &six_rbkt   &eight_exlm &trans
-   &kp F11    &kp F1        &kp F2      &kp F3      &kp F4      &kp F5               &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
-   &trans     &kp F6        &kp F7      &kp F8      &kp F9      &kp F10              &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
-                          	            &trans      &trans      &trans               &trans     &trans      &trans
+   &trans  &kp N7 &kp N5  &kp N3 &kp N1 &kp N9     &kp N0   &kp N2    &kp N4    &kp N6    &kp N8 &trans
+   &kp F11 &kp F1 &kp F2  &kp F3 &kp F4 &kp F5     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
+   &trans  &kp F6 &kp F7  &kp F8 &kp F9 &kp F10    &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &trans
+                          &trans &trans &trans     &trans &trans &trans  
                         >;
                 };
 
