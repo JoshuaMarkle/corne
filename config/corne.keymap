@@ -42,14 +42,14 @@
 
         raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  '  |  <  |  >  |  "  |     |        |     |  &  |  [  |  ]  |  %  | DEL  |
-// | CTRL |  !  |  -  |  +  |  =  |  #  |        |  |  |  :  |  (  |  )  |  ?  |      |
-// | SHFT |  ^  |  /  |  *  |  \  |  $  |        |  ~  |  _  |  {  |  }  |  @  |      |
+// |  ESC |  '  |  <  |  >  |  "  |     |        |     |  &  |  }  |  {  |  %  | DEL  |
+// | CTRL |  !  |  -  |  +  |  =  |  #  |        |  |  |  :  |  )  |  (  |  ?  |      |
+// | SHFT |  ^  |  /  |  *  |  \  |  $  |        |  ~  |  _  |  ]  |  [  |  @  |      |
 //                    | GUI |     | SPC |        | ENT |     | ALT |
             bindings = <
-&trans    &kp SQT   &kp LT    &kp GT   &kp DQT   &trans      &trans    &kp AMPS  &kp LBKT &kp RBKT &kp PRCNT &kp DEL
-&kp LCTRL &kp EXCL  &kp MINUS &kp PLUS &kp EQUAL &kp HASH    &kp PIPE2 &kp COLON &kp LPAR &kp RPAR &kp QMARK &trans
-&trans    &kp CARET &kp FSLH  &kp STAR &kp BSLH  &kp DLLR    &kp TILDE &kp UNDER &kp LBRC &kp RBRC &kp AT    &trans
+&trans    &kp SQT   &kp LT    &kp GT   &kp DQT   &trans      &trans    &kp AMPS  &kp RBRC &kp LBRC &kp PRCNT &kp DEL
+&kp LCTRL &kp EXCL  &kp MINUS &kp PLUS &kp EQUAL &kp HASH    &kp PIPE2 &kp COLON &kp RPAR &kp LPAR &kp QMARK &trans
+&trans    &kp CARET &kp FSLH  &kp STAR &kp BSLH  &kp DLLR    &kp TILDE &kp UNDER &kp RBKT &kp LBKT &kp AT    &trans
                     	           &trans &trans &trans      &trans &trans &trans
             >;
         };
