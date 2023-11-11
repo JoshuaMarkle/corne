@@ -44,13 +44,13 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  "  |  <  |  >  |  _  |     |        |     |  &  |  }  |  {  |  %  |     |
 // | CTRL |  !  |  -  |  +  |  =  |  #  |        |  |  |  :  |  )  |  (  |  ?  |     |
-// | SHFT |  ^  |  /  |  *  |  \  |  $  |        |  ~  |  `  |  ]  |  [  |  @  |     |
+// | SHFT |  ^  |  /  |  *  |  \  |  $  |        |  `  |  ~  |  ]  |  [  |  @  |     |
 //                    | GUI |     | SPC |        | ENT |     | ALT |
             bindings = <
 &trans    &kp DQT   &kp LT    &kp GT   &kp UNDER &trans      &trans    &kp AMPS  &kp RBRC &kp LBRC &kp PRCNT &trans
 &kp LCTRL &kp EXCL  &kp MINUS &kp PLUS &kp EQUAL &kp HASH    &kp PIPE2 &kp COLON &kp RPAR &kp LPAR &kp QMARK &trans
-&trans    &kp CARET &kp FSLH  &kp STAR &kp BSLH  &kp DLLR    &kp TILDE &kp GRAVE &kp RBKT &kp LBKT &kp AT    &trans
-                    	           &trans &trans &trans      &trans &trans &tr
+&trans    &kp CARET &kp FSLH  &kp STAR &kp BSLH  &kp DLLR    &kp GRAVE &kp TILDE &kp RBKT &kp LBKT &kp AT    &trans
+                    	           &trans &trans &trans      &trans &trans &trans
             >;
         };
     };
