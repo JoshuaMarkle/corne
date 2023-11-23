@@ -27,22 +27,22 @@
 //  +------------------| GUI | LWR | SPC |        | RSE | ENT | ALT |------------------+
 //                     +-----------------+        +-----------------+
             bindings = <
-&kp ESC   &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G &kp C &kp R &kp L &kp BSPC
-&kp LCTRL &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H &kp T &kp N &kp S &kp DEL
-&kp LSHFT &kp SEMI &kp Q     &kp J   &kp K &kp X   &kp B &kp M &kp W &kp V &kp Z &kp TAB
-                        &kp LGUI &mo 1 &kp SPACE   &mo 2 &kp RET &kp RALT
+&kp ESC   &kp SQT  &kp COMMA &kp DOT &kp P &kp Y    &kp F &kp G &kp C &kp R &kp L &kp BSPC
+&kp LCTRL &kp A    &kp O     &kp E   &kp U &kp I    &kp D &kp H &kp T &kp N &kp S &kp DEL
+&kp LSHFT &kp SEMI &kp Q     &kp J   &kp K &kp X    &kp B &kp M &kp W &kp V &kp Z &kp TAB
+                        &kp LGUI &mo 1 &kp SPACE    &mo 2 &kp RET &kp RALT
             >;
         };
 
         lower_layer {
 //  +------------------------------------+        +------------------------------------+
-//  | ESC  | F7  | F5  | F3  | F1  | F9  |        | F10 | F2  | F4  | F6  | RGT | BKSP |
+//  | ESC  | F7  | F5  | F3  | F1  | F9  |        | F11 | F2  | F4  | F6  | RGT | BKSP |
 //  | CTRL |  7  |  5  |  3  |  1  |  9  |        |  0  |  2  |  4  |  6  |  8  | DEL  |
 //  | SHFT |     |     |     |     |     |        |     |     |     |     |     | TAB  |
 //  +------------------| GUI |     | SPC |        |     | ENT | ALT |------------------+
 //                     +-----------------+        +-----------------+
             bindings = <
-&trans &kp F7 &kp F5 &kp F3 &kp F1 &kp F9         &kp F10 &kp F2 &kp F4 &kp F6 &kp F8 &trans
+&trans &kp F7 &kp F5 &kp F3 &kp F1 &kp F9         &kp F11 &kp F2 &kp F4 &kp F6 &kp F8 &trans
 &trans &kp N7 &kp N5 &kp N3 &kp N1 &kp N9         &kp N0  &kp N2 &kp N4 &kp N6 &kp N8 &trans
 &trans &trans &trans &trans &trans &trans         &trans  &trans &trans &trans &trans &trans
                      &trans &trans &trans         &trans  &trans &trans
@@ -66,16 +66,16 @@
         
 		tri_layer {
 //  +------------------------------------+        +------------------------------------+
-//  | ESC  |     |     |     |     |     |        |     |     |     |     | UP  | BKSP |
+//  | ESC  | BT0 | BT1 | BT2 |     | BCR |        |     |     |     |     | RGT | BKSP |
 //  | CTRL |     |     |     |     |     |        |     | LFT |     |     |     | DEL  |
 //  | SHFT |     |     | DWN | UP  |     |        |     |     |     |     |     | TAB  |
 //  +------------------| GUI |     | SPC |        |     | ENT | ALT |------------------+
 //                     +-----------------+        +-----------------+
             bindings = <
-&trans &trans &trans &trans   &trans &trans       &trans &trans   &trans &trans &kp UP &trans
-&trans &trans &trans &trans   &trans &trans       &trans &kp LEFT &trans &trans &trans &trans
-&trans &trans &trans &kp DOWN &kp UP &trans       &trans &trans   &trans &trans &trans &trans
-                       &trans &trans &trans       &trans &trans &trans
+&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &bt BT_CLR    &trans &trans   &trans &trans &kp RIGHT &trans
+&trans &trans       &trans       &trans       &trans &trans        &trans &kp LEFT &trans &trans &trans    &trans
+&trans &trans       &trans       &kp DOWN     &kp UP &trans        &trans &trans   &trans &trans &trans    &trans
+                                       &trans &trans &trans        &trans &trans &trans
             >;
         };
     };
