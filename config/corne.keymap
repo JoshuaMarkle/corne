@@ -37,13 +37,13 @@
         lower_layer {
 //  +------------------------------------+        +------------------------------------+
 //  | ESC  | F7  | F5  | F3  | F1  | F9  |        | F11 | F2  | F4  | F6  | RGT | BKSP |
-//  | CTRL |  7  |  5  |  3  |  1  |  9  |        |  0  |  2  |  4  |  6  |  8  | DEL  |
+//  | CTRL |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8  |  9  |  0  | DEL  |
 //  | SHFT |     |     |     |     |     |        |     |     |     |     |     | TAB  |
 //  +------------------| GUI |     | SPC |        |     | ENT | ALT |------------------+
 //                     +-----------------+        +-----------------+
             bindings = <
 &trans &kp F7 &kp F5 &kp F3 &kp F1 &kp F9         &kp F11 &kp F2 &kp F4 &kp F6 &kp F8 &trans
-&trans &kp N7 &kp N5 &kp N3 &kp N1 &kp N9         &kp N0  &kp N2 &kp N4 &kp N6 &kp N8 &trans
+&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5         &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &trans
 &trans &trans &trans &trans &trans &trans         &trans  &trans &trans &trans &trans &trans
                      &trans &trans &trans         &trans  &trans &trans
             >;
