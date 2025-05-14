@@ -5,10 +5,10 @@
                 <&gpio1 4 GPIO_ACTIVE_LOW>,
                 <&gpio1 3 GPIO_ACTIVE_LOW>;
 
-    col-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>,  // C0
-                <&gpio0 9 GPIO_ACTIVE_LOW>,   // C1
-                <&gpio1 13 GPIO_ACTIVE_LOW>,  // C2
-                <&gpio1 15 GPIO_ACTIVE_LOW>,  // C3
-                <&gpio1 2 GPIO_ACTIVE_LOW>,   // C4
-                <&gpio1 31 GPIO_ACTIVE_LOW>;  // C5 ← Replaces the broken pin
+	col-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>,
+				<&gpio0 5 GPIO_ACTIVE_LOW>,
+				<&gpio0 6 GPIO_ACTIVE_LOW>,
+				<&gpio0 7 GPIO_ACTIVE_LOW>,
+				<&gpio0 9 GPIO_ACTIVE_LOW>,  // Updated pin
+				<&gpio0 2 GPIO_ACTIVE_LOW>;
 };
