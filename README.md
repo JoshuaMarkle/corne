@@ -20,6 +20,8 @@ I have also created a [Build Guide](doc/Build-Guide.md) specifically for my wire
 
 ![Corne Upper](doc/images/corne-function.png)
 
+>[!NOTE] Has since been updated so the numbers are ordered 12345 67890
+
 #### Tri Layer (Upper + Lower)
 
 ![Corne Tri](doc/images/corne-tri.png)
