@@ -1,15 +1,23 @@
+/* corn_left.overlay
+ * explicit GPIO list for left half
+ * reroute broken GPIO on my board
+ */
 #include "corne.dtsi"
 
-&matrix {
-    row-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>,  // D0 - Row 0
-                <&gpio0 29 GPIO_ACTIVE_LOW>, // D1 - Row 1
-                <&gpio0 31 GPIO_ACTIVE_LOW>, // D2 - Row 2
-                <&gpio0 4 GPIO_ACTIVE_LOW>,  // D3 - Row 3
-                <&gpio0 5 GPIO_ACTIVE_LOW>,  // D4 - Row 4
-                <&gpio0 3 GPIO_ACTIVE_LOW>;  // D5 - Row 5
+&kscan0 {
+	/* rows – repeat values from corne.dtsi just to make this file self‑contained */
+	row-gpios =
+		<&pro_micro  4 GPIO_ACTIVE_HIGH>,
+		<&pro_micro  5 GPIO_ACTIVE_HIGH>,
+		<&pro_micro  6 GPIO_ACTIVE_HIGH>,
+		<&pro_micro  7 GPIO_ACTIVE_HIGH>;
 
-    col-gpios = <&gpio0 28 GPIO_ACTIVE_LOW>, // D6 - Col 0
-                <&gpio0 30 GPIO_ACTIVE_LOW>, // D7 - Col 1
-                <&gpio0 6 GPIO_ACTIVE_LOW>,  // D8 - Col 2
-                <&gpio0 26 GPIO_ACTIVE_LOW>; // D9 - Col 3
+	/* columns – six scan outputs for the left half */
+	col-gpios =
+		<&pro_micro 21 GPIO_ACTIVE_HIGH>,
+		<&pro_micro 20 GPIO_ACTIVE_HIGH>,
+		<&pro_micro 19 GPIO_ACTIVE_HIGH>,
+		<&pro_micro 18 GPIO_ACTIVE_HIGH>,
+		<&pro_micro 15 GPIO_ACTIVE_HIGH>,
+		<&pro_micro 14 GPIO_ACTIVE_HIGH>;
 };
